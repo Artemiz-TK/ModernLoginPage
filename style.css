@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0f0f0f;
+    overflow: hidden;
+}
+
+section {
+    position: fixed;
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+section span {
+    position: relative;
+    display: block;
+    width: 6.25vw;
+    height: 6.25vw;
+    background: #181818;
+    z-index: 2;
+    overflow: hidden;
+    border: 1px solid #181818;
+    transition: border 1s ease;
+}
+
+.show-border {
+    border: 1px solid red !important;
+}
+
+section span.hover:hover {
+    background: #f00;
+    transition: 0s;
+}
+
+.signin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 8px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.9);
+    width: 300px;
+}
+
+.signin h2 {
+    color: #f00;
+    margin-bottom: 1rem;
+}
+
+.signin input {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 4px;
+    background: #2a2a2a;
+    color: #fff;
+}
+
+.signin .links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.signin .links a {
+    color: #888;
+    text-decoration: none;
+}
+
+.signin .links a:hover {
+    text-decoration: underline;
+}
+
+.signin button {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    width: 100%;
+    border: none;
+    background: #f00;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+@media (max-width: 1227px) {
+    section span {
+        width: 6.25dvw;
+        height: 6.25dvw;
+    }
+}
+
+@media (max-width: 1000px) {
+    section span {
+        width: 6.25dvw;
+        height: 6.25dvw;
+    }
+}
+
+@media (max-width: 800px) {
+    section span {
+        width: 7.13dvw;
+        height: 7.13dvw;
+    }
+}
+
+@media (max-width: 600px) {
+    section span {
+        width: 7.14dvw;
+        height: 7.14dvw;
+    }
+}
+
+@media (max-width: 500px) {
+    section span {
+        width: 7.144dvw;
+        height: 7.7dvw;
+    }
+}
+
+@media (max-width: 400px) {
+    section span {
+        width: 10dvw;
+        height: 10dvw;
+    }
+}
