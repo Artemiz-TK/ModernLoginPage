@@ -128,16 +128,38 @@ section span.hover:hover {
     }
 }
 
+@media (min-width: 500px) {
+    section span {
+        width: 9.09dvw;
+        height: 9.09dvw;
+    }
+}
+
 @media (max-width: 500px) {
     section span {
-        width: 7.144dvw;
-        height: 7.7dvw;
+        width: 12.5dvw;
+        height: 12dvw;
     }
 }
 
 @media (max-width: 400px) {
     section span {
-        width: 10dvw;
-        height: 10dvw;
+        width: 12.5dvw;
+        height: 12.4dvw;
+    }
+}
+
+@media (max-width: 370px) {
+    .signin {
+        width: 270px;
+    }
+
+    .signin .links {
+        font-size: 13px;
+    }
+
+    section span {
+        width: 12.5dvw;
+        height: 13dvw;
     }
 }

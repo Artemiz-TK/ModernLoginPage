@@ -6,8 +6,6 @@ const rect = section.getBoundingClientRect();
 let totalSpans = 256;
 let applying = false;
 
-console.log(`width: ${rect.width}px\nheight: ${rect.height}px`);
-
 function verifyTotalSpans() {
     if (rect.width >= 1228) {
         return 128;
@@ -17,7 +15,7 @@ function verifyTotalSpans() {
         return 144;
     }
 
-    if (rect.width >= 800){
+    if (rect.width >= 800) {
         return 300;
     }
 
@@ -25,9 +23,22 @@ function verifyTotalSpans() {
         return 300;
     }
 
-    if (rect.width >= 400){
-        return 266;
+    if (rect.width >= 500) {
+        return 190;
     }
+
+    if (rect.width >= 400) {
+        return 104;
+    }
+
+    if (rect.width <= 400) {
+        return 126;
+    }
+
+    if (rect.width <= 370) {
+        return 104;
+    }
+
 }
 
 totalSpans = verifyTotalSpans();
